@@ -1,9 +1,9 @@
-public class FibonnacciRecursion {
+public class FibonacciRecursion {
     public static void main(String[] args) {
-        System.out.println(fib(11));
+        System.out.println(fib(50));
     }
 
-    private static int fib(int n) {
+    private static long fib(int n) {
         if (n <= 2)
             return 1;
         else{
