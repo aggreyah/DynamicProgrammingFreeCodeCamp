@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class GridTravellerMemoization {
     public static void main(String[] args) {
-        System.out.println(gridTraveller(35, 35, new HashMap<>()));
+        System.out.println(gridTraveller(55, 55, new HashMap<>()));
     }
 
     private static BigInteger gridTraveller(int m, int n, Map<String, BigInteger> map) {
