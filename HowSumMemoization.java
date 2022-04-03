@@ -20,8 +20,9 @@ public class HowSumMemoization {
         for (int item : ints){
             List<Integer> remainderResult = howSum(targetSum - item, ints, map);
             if (remainderResult != null){
-                remainderResult.add(item);
-                map.put(targetSum, remainderResult);
+                List<Integer> result = new ArrayList<>(remainderResult);
+                result.add(item);
+                map.put(targetSum, result);
                 return map.get(targetSum);
             }
         }

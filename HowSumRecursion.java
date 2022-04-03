@@ -17,8 +17,9 @@ public class HowSumRecursion {
         for (int item : ints){
             List<Integer> remainderResult = howSum(targetSum - item, ints);
             if (remainderResult != null){
-                remainderResult.add(item);
-                return remainderResult;
+                List<Integer> result = new ArrayList<>(remainderResult);
+                result.add(item);
+                return result;
             }
         }
         return null;
