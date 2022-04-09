@@ -10,9 +10,6 @@ public class CountConstructTabulation {
 
     private static int countConstruct(String targetWord, String[] wordBank) {
         int[] table = new int[targetWord.length() + 1];
-        for (int i = 0; i <= targetWord.length(); i++){
-            table[i] = 0;
-        }
         table[0] = 1;
 
         for (int i = 0; i < targetWord.length() + 1; i++){

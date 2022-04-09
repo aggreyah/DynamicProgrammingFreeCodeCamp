@@ -8,8 +8,8 @@ public class AllConstructRecursion {
         System.out.println(allConstruct("abcdef", new String[]{"ab", "abc", "cd", "def", "abcd", "ef", "c"}));
         System.out.println(allConstruct("skateboard", new String[]{"bo", "rd", "ate", "t", "ska", "sk", "boar", "d"}));
         System.out.println(allConstruct("enterapotentpot", new String[]{"a", "p", "ent", "enter", "ot", "o", "t"}));
-//        System.out.println(allConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",
-//                new String[]{"e", "ee", "eee", "eeee", "eeeee", "eeeeee"}));
+        System.out.println(allConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",
+                new String[]{"e", "ee", "eee", "eeee", "eeeee", "eeeeee"}));
     }
 
     private static List<List<String>> allConstruct(String targetWord, String[] wordBank) {
